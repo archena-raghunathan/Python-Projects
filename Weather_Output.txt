@@ -1,0 +1,30 @@
+C:\Python27\python.exe C:/Users/munarayanan/Desktop/Learn_python/Selenium/sel1.py
+Current weather forecast for the city san jose , CA weather 
+San Jose, CA
+Thursday 12:00 PM
+Cloudy
+62
+°F | °C
+Precipitation: 98%
+Humidity: 80%
+Wind: 12 mph
+TemperaturePrecipitationWind
+1 PM4 PM7 PM10 PM1 AM4 AM7 AM10 AM1 PM4 PM7 PM
+Thu
+64°55°
+Fri
+61°46°
+Sat
+61°41°
+Sun
+64°42°
+Mon
+66°45°
+Tue
+66°49°
+Wed
+66°53°
+Thu
+62°50°
+
+Process finished with exit code 0

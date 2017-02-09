@@ -1,0 +1,18 @@
+#!c:/Python27/python.exe
+
+print ("Content-type: text/html\r\n\r\n")
+print ('<html>')
+print ('<head>')
+print ('<title>Spell Check</title>')
+print ('</head>')
+print ('<body>')
+print ('<h2>Enter your line here for spell check!!</h2>')
+print ('<form name="pyform" method="post" action="/cgi-bin/spell_check_executable.py"><br>')
+#print ('<input type="text" name="lines"><br>')
+print ('<textarea name = "lines_of_text" rows = 25 cols = 80>')
+print ('</textarea>')
+print ('<br>')
+print ('<input type="submit" name="submit" value = Submit>')
+print ('</form>')
+print ('</body>')
+print ('</html>')
