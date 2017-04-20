@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Results</title>
+
+
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div align="middle" style="background-color:#F5D0A9">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                <!--<li role="presentation" ><a href="{{ url_for('index') }}">Home</a></li>-->
+				<li role="presentation" class="active"><a href="{{ url_for('results', student_par_name= name) }}">Performance</a></li>
+				<li role="presentation" ><a href="{{ url_for('index') }}">Sign Out</a></li>
+				</ul>
+            </nav>
+
+        </div>
+        <h2 style="color:green"><b>2016-2017 Term Results</b></h2>
+        <h2 style="color:#8A0868"><b>Name: {{ student }}</b></h2>
+        <br>
+<!--
+        <div class="jumbotron">
+            <h1>Data</h1>
+            <h2><a href="{{ url_for('calendar') }}">Calendar</a></h2>
+            <p class="lead"></p>
+            <p><a class="btn btn-lg btn-success" href = "{{ url_for('results', student_par_name= name) }}" role="button">Results</a>
+
+        </div>
+    -->
+        <table border = "2px solid black" style="font-family:Calibri;font-size:30px;">
+             <col width="800">
+             <col width="200">
+            <tr >
+                <td width ="800" align="center"><b>Skill</b></td>
+                <td width="80" height="50" align="center"><b>Grade</b></td>
+            </tr>
+            <tr style="color:blue">
+                <td height="30" align="center"><b>Cognitive</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td align="left" style="padding-left: 10px"><b>Personal Curiosity</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Shows curiosity and interest is surroundings.</td>
+                <td align="center">{{ cognitive }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Imitates the actions of adults.</td>
+                <td align="center">{{ cognitive }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Imitates play of other children	</td>
+                <td align="center">{{ cognitive }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Finds own play areas or activity	</td>
+                <td align="center">{{ cognitive }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Enjoys looking at books	</td>
+                <td align="center">{{ cognitive }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Begins to notice differences between safe and unsafe environment	</td>
+                <td align="center">{{ cognitive }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px"><b>Senses</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Begins to develop senses of touch, smell, taste, and hearing	</td>
+                <td align="center">{{ cognitive }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Begins to place large puzzle pieces in appropriate slots	</td>
+                <td align="center">{{ cognitive }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px"><b>Memory</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Refers to self by name	</td>
+                <td align="center">{{ cognitive }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Points to common object on command	</td>
+                <td align="center">{{ cognitive }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Associates use with common objects	</td>
+                <td align="center">{{ cognitive }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Stacks three rings by size	</td>
+                <td align="center">{{ cognitive }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Knows that different activities go on different times of the day	</td>
+                <td align="center">{{ cognitive }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Understands that idea of waiting for someone else to go first	</td>
+                <td align="center">{{ cognitive }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px"><b>Creativity</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Shows simple symbolic play (pretends block is a cup)	</td>
+                <td align="center">{{ cognitive }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Acts out a simple story	</td>
+                <td align="center">{{ cognitive }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Draws a face (no arms or legs)	</td>
+                <td align="center">{{ cognitive }}</td>
+            </tr>
+            <tr style="color:blue">
+                <td height="30" align="center"><b>Language</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px" align="left"><b>Sentence Structure</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Describes what happened in two or three words.</td>
+                <td align="center"> {{ language }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Verbalizes wants ("want water.")</td>
+                <td align="center"> {{ language }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Repeats parts of songs, rhymes, and fingerplays.</td>
+                <td align="center"> {{ language }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Gives first and last name when asked.</td>
+                <td align="center"> {{ language }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Uses short sentences to convey simple ideas.</td>
+                <td align="center"> {{ language }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px" align="left"><b>Listening</b></td>
+                <td>  </td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Listens to simple stories and songs.</td>
+                <td align="center">{{ language }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Follows simple directions.</td>
+                <td align="center"> {{ language }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Place objects in, on beside, or under.</td>
+                <td align="center"> {{ language }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Identifies loud and soft.</td>
+                <td align="center"> {{ language }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px" align="left"><b>Labeling</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Identifies own gender.</td>
+                <td align="center"> {{ language }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Identifies self in mirror.</td>
+                <td align="center"> {{ language }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Names common objects in pictures.</td>
+                <td align="center"> {{ language }}</td>
+            </tr>
+            <tr style="color:blue">
+                <td height="30" align="center"><b>Self</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Pints to six body parts when named.</td>
+                <td align="center"> {{ self1 }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Puts on and removes coat unassisted.</td>
+                <td align="center"> {{ self1 }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Lifts and drinks from cup and replaces on table.</td>
+                <td align="center"> {{ self1 }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Spoon feeds without spilling.</td>
+                <td align="center"> {{ self1 }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Begins to understand cleanliness.</td>
+                <td align="center"> {{ self1 }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Helps put things away.</td>
+                <td align="center"> {{ self1 }}</td>
+            </tr>
+            <tr style="color:blue">
+                <td height="30" align="center"><b>Social Studies</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Identifies self from snapshot.</td>
+                <td align="center"> {{ social }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Shows pleasure in dealing with people and things.</td>
+                <td align="center"> {{ social }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Values own property and names personal belongings.</td>
+                <td align="center"> {{ social }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Follows simple rules in a game run by an adult.</td>
+                <td align="center"> {{ social }}</td>
+            </tr>
+            <tr style="color:blue">
+                <td height="30" align="center"><b>Math</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px"><b>Counting</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Understands the concept of "one".</td>
+                <td align="center"> {{ math }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Counts two (repeats two digits).</td>
+                <td align="center"> {{ math }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Indicates awareness of more than two.</td>
+                <td align="center"> {{ math }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px" align="left"><b>Classifying</b></td>
+                <td align="center"></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Groups things together by size (one category)</td>
+                <td align="center">{{ math }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px" align="left"><b>Size Differences</b></td>
+                <td align="center"></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Points to big and little objects.</td>
+                <td align="center">{{ math }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px"><b>Shapes</b></td>
+                <td align="center"></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Differentiates circle and square.</td>
+                <td align="center">{{ math }}</td>
+            </tr>
+            <tr style="color:blue">
+                <td height="30" align="center"><b>Science</b></td>
+                <td align="center"></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px" align="left"><b>Concepts</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Knows the names of three animals.</td>
+                <td align="center">{{ science }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Can associate the words grass, plant, and tree with correct objects.</td>
+                <td align="center">{{ science }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Identifies rain, clouds, and sun.</td>
+                <td align="center">{{ science }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Begins to understand hard and soft.</td>
+                <td align="center">{{ science }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Begins to understand hot and cold.</td>
+                <td align="center">{{ science }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Begins to understand wet and dry.</td>
+                <td align="center">{{ science }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Matches two color samples.</td>
+                <td align="center">{{ science }}</td>
+            </tr>
+            <tr style="color:blue">
+                <td height="30" align="center"><b>Gross-Motor</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px" align="left"><b>Arm-Eye Coordination</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Throws a small object two feet.</td>
+                <td align="center">{{ gross }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Catches a rolled ball and rolls it forward.</td>
+                <td align="center">{{ gross }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px" align="left"><b>Body Coordination</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Jumps with two feet.</td>
+                <td align="center">{{ gross }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Claps with music.</td>
+                <td align="center">{{ gross }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Walks on tip toe.</td>
+                <td align="center">{{ gross }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Walks upstairs alone (both feet on each step).</td>
+                <td align="center">{{ gross }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Walks downstairs alone (both feet on each step).</td>
+                <td align="center">{{ gross }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Hops on one foot.</td>
+                <td align="center">{{ gross }}</td>
+            </tr>
+            <tr style="color:blue">
+                <td height="30" align="center"><b>Fine Motor</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px" align="left"><b>Finger Strength and dexterity</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Fills and dumps container with sand.</td>
+                <td align="center">{{ fine }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Turns single pages.</td>
+                <td align="center">{{ fine }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px" align="left"><b>Eye-Hand Coordination</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Paints with a large brush</td>
+                <td align="center">{{ fine }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Tears paper</td>
+                <td align="center">{{ fine }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Strings five large beads</td>
+                <td align="center">{{ fine }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Colors with a large crayon</td>
+                <td align="center">{{ fine }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Rolls, pounds, and squeezes clay</td>
+                <td align="center">{{ fine }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Draws a horizontal line</td>
+                <td align="center">{{ fine }}</td>
+            </tr>
+            <tr>
+                <td style="padding-left: 10px">Builds a six-block tower</td>
+                <td align="center">{{ fine }}</td>
+            </tr>
+        </table>
+
+
+</body>
+
+</html>

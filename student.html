@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Student Page</title>
+    <link href="{{ url_for('static', filename='index.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ url_for('static', filename='index.css')}}" rel="stylesheet" type="text/css" />
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+
+</head>
+
+<body id= "b1">
+    <div class="container" id = "banner1" >
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                <li role="presentation" ><a href="{{ url_for('index') }}">Home</a></li>
+				<li role="presentation" class="active"><a href="{{ url_for('webportal') }}">Portal</a></li>
+				<li role="presentation" ><a href="{{ url_for('index') }}">Sign Out</a></li>
+				</ul>
+            </nav>
+
+            <p class="lead"></p>
+            <p><a class="btn btn-lg btn-success" href = "{{ url_for('results', student_par_name= name) }}" role="button">Term Results</a> <a  class="btn btn-lg btn-success" href="{{ url_for('calendar') }}">School Calendar 2016-2017</a>
+            <br><br><img style="margin-left:250px;width:25%;float:center;"  src="\static\logo.png">
+            <h1 style="color:yellow;font-family:Algerian;font-size:60px;" align="center"> {{ student_name }} </h1>
+
+        </div>
+    </div>
+
+        <div id="b1" style="width:100%;padding-left:640px;">
+            <br><br>
+        <a href="#"><img src="\static\about1.png" alt=""></a><br><br>
+        </div>
+        <br><br><br><br>
+        <div style="width:100%;background-color:#21610B;">
+        <img  align="top" width = 45%  height = "1100" src="\static\allaboutme.jpg" alt=""><object align="right" height = "1100" width= 45% data="\static\ECCStudentInfoSheet.pdf"></object>
+        </div>
+</body>
+
+</html>

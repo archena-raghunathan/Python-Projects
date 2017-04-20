@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Little Tots</title>
+	<link href="{{ url_for('static', filename='index.css')}}" rel="stylesheet" type="text/css" />
+<!--    <link href="{{ url_for('static', filename='programs.css')}}" rel="stylesheet" type="text/css" />
+	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+ -->
+ 
+</head>
+<body id="page1">
+<div class="body1">
+  <div class="main">
+  
+    <!-- header -->
+    <header>
+      <div class="wrapper">
+	  
+        <nav>
+		
+          <ul id="menu">
+			<li><a id = "logo" href="#"></a><img width="25%"  src="\static\logo.png"><span id="logotitle">A Scoop of Wisdom!!</span></li>
+            <li><a href="{{ url_for('index') }}">HOME</a></li>
+            <li><a href="{{ url_for('programs') }}">PROGRAMS</a></li>
+            <li><a href="{{ url_for('teachers') }}">TEACHERS</a></li>
+            <li><a href="{{ url_for('newsletter') }}">NEWSLETTER</a></li>
+            <li><a href="{{ url_for('webportal') }}">WEB PORTAL</a></li>
+            <li class="end"><a href="{{ url_for('contact') }}">CONTACTS</a></li>
+			</ul>
+			<!--<ul id="icon">
+				<li><a href="#"><img src="images/icon1.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/icon2.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/icon3.jpg" alt=""></a></li>
+			</ul-->
+        </nav>
+		</div>
+   </header>
+   
+  
+  <div id = "banner">
+  <h1>OUR PHILOSOPHY</h1><br>
+  <br><br>
+  <h2>Goals - Awareness and Exploration</h2>
+  <br><br>
+	<div id="info">
+  <p>Little Tots school is a model in providing early care and education as a foundation for lifelong learning, acedemic and social success. At this school, we understand every child has his or her own interests and passions and contributes in his or her own way.we tailor our age-appropriate, semi-structured curriculum to enhance unique learning styles.
+We also balance education with plenty of time for play and self-discovery to put your child on a proven path to a happy and enriching school experience. </p>
+<br>
+<p>Children go through phases of reading development from preschool through third grade — from exploration of books to independent reading. In preschool, children explore their environment and build the foundations for learning to read and write. Find out what parents and teachers can do to support preschool literacy skills.</p>
+<br><br>
+<h3>Children can</h3><br>
+<ul>
+<li>Enjoy listening to and discussing storybooks.</li>
+<li>Understand that print carries a message.</li>
+<li>Engage in reading and writing attempts.</li>
+<li>Identify labels and signs in their environment.</li>
+<li>Participate in rhyming games.</li>
+<li>Identify some letters and make some letter-sound matches.</li>
+<li>Use known letters or approximations of letters to represent written language (especially meaningful words like their name and phrases such as "I love you").</li>
+</ul>
+<br><br>
+<h3>What Teachers do</h3><br>
+<ul>
+<li>Share books with children, including Big Books, and model reading behaviors.</li>
+<li>Talk about letters by name and sounds.</li>
+<li>Establish a literacy-rich environment.</li>
+<li>Reread favorite stories.</li>
+<li>Engage children in language games.</li>
+<li>Promote literacy-related play activities.</li>
+<li>Encourage children to experiment with writing.</li>
+</ul>
+<br><br>
+<h3>What parents and family members can do:</h3><br>
+<ul>
+<li>Talk with children, engage them in conversation, give names of things, show interest in what a child says.</li>
+<li>Read and reread stories with predictable text to children.</li>
+<li>Encourage children to recount experiences and describe ideas and events that are important to them.</li>
+<li>Visit the library regularly.</li>
+<li>Provide opportunities for children to draw and print, using markers, crayons, and pencils.</li>
+</ul>
+<br>
+
+
+  </div>
+  <!--
+<div id= "footer">
+<table>
+    <tr>
+        <td><h3>About Us:</h3></td>
+        <td><h3>Join In</h3></td>
+        <td><h3>Subscribe</h3></td>
+
+    </tr>
+    <tr>
+        <td>Country:INDIA</td>
+        <td><a href="{{ url_for('signin') }}">Sign In</a></td>
+        <td><input type="text"  width="60" name= "Subscribe" placeholder="Enter your Email address"></td>
+    </tr>
+    <tr>
+        <td>City:Chennai</td>
+        <td><a href="{{ url_for('webportal') }}">Web Portal</a></td>
+        <td><img style="width:10%;margin-top:5px;padding-right:20px;" src = "/static/facebook.png" alt = ""><img style="width:10%;margin-top:5px;padding-right:20px;" src = "/static/twitter.png" alt = ""><img style="width:10%;margin-top:5px;padding-right:20px;" src = "/static/rss.png" alt = ""></td>
+
+    </tr>
+    <tr>
+        <td>Ph:044-42876170</td>
+        <td><a href="{{ url_for('newsletter') }}">Newsletter</a></td>
+    </tr>
+    <tr>
+        <td>E-mail:ltots@yahoo.com</td>
+    </tr>
+</table>
+
+
+
+</div><br><br>
+-->
+      <script type="text/javascript">Cufon.now();</script>
+</body>
+</html>

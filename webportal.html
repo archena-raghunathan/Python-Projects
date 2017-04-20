@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Little Tots Web Portal</title>
+ 
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+ 
+ 
+</head>
+ 
+<body>
+    <div class="container" style="background-color:white">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                <li role="presentation" ><a href="{{ url_for('index') }}">Home</a></li>
+				<li role="presentation" class="active"><a href="{{ url_for('webportal') }}">Portal</a></li>
+				<li role="presentation" ><a href="{{ url_for('signin') }}">Sign In</a></li>
+				</ul>
+            </nav>
+            <h3 class="text-muted">Little Tots - Web portal</h3>
+        </div>
+ 
+        <div class="jumbotron">
+            <h1>Web Portal</h1>
+            <p class="lead"></p>
+            <p><a href="{{ url_for('signup') }}" class="btn btn-lg btn-success" href="showSignUp" role="button">Sign up</a>
+            </p>
+        </div>
+ 
+        <div class="row marketing">
+            <div class="col-lg-6">
+                <h4><a href="http://www.readingrockets.org/audience/parents">Parents</a></h4>
+                <p>Find resources and activities that can help your child become an engaged reader, including literacy adventure packs, themed booklists, author interviews, nonfiction resources, summer reading suggestions and more.</p>
+ 
+                <h4><a href="http://www.readingrockets.org/audience/teachers">Teachers</a></h4>
+                <p>Teachers are always learning, too! Watch classroom videos and expert-led webcasts, browse our strategy library, discover our books and authors resources, find out more about STEM and literacy, go inside Common Core classrooms, learn how to help struggling readers and more.</p>
+ 
+                <h4><a href="http://www.readingrockets.org/audience/professionals/principals">Principals</a></h4>
+                <p>Help the students in your school become star readers and writers by exploring content focused on the Common Core, parent engagement, professional development and much more.</p>
+				
+				            </div>
+ 
+            <div class="col-lg-6">
+                <h4><a href="http://www.readingrockets.org/audience/professionals/preschool">Preschool Teachers</a></h4>
+                <p>A love of literacy starts early! Monitor developmental milestones and engage with your growing readers using these literacy resources, including activities and resources on phonemic awareness, decoding, vocabulary and more.</p>
+
+                <h4><a href="http://www.readingrockets.org/audience/professionals/counselors">School Councelors</a></h4>
+                <p>Help students become confident, involved readers with articles and videos about parent engagement, how to help struggling readers, and ways to support classroom teachers.</p>
+ 
+                <h4><a href="http://www.readingrockets.org/audience/professionals/librarians">Librarians</a></h4>
+                <p>Librarians are literacy leaders. Find resources on Common Core, helping struggling readers, tackling nonfiction, and more to engage growing readers. You'll also find exclusive interviews with children's book authors and illustrations to help children connect with their favorite books!</p>
+            </div>
+        </div>
+ 
+        <footer class="footer">
+            <p>&copy; Company 2017</p>
+        </footer>
+ 
+    </div>
+</body>
+ 
+</html>

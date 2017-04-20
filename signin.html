@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Parents Signin</title>
+ 
+    
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../static/css/signup.css" rel="stylesheet">
+    <script src="../static/js/jquery-1.11.2.js"></script>
+    
+  </head>
+ 
+  <body>
+ 
+    <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" ><a href="{{ url_for('index') }}">Home</a></li>
+            <li role="presentation" ><a href="{{ url_for('webportal') }}">Portal</a></li>
+            <li role="presentation" class="active"><a href="{{ url_for('signin') }}">Sign In</a></li>
+
+           </ul>
+        </nav>
+        <h3 class="text-muted">Parents Signin</h3>
+      </div>
+      <div class="jumbotron">
+        <h1>Signin</h1>
+        {% if msg %}
+        <h3 id = "error_msg" style="color:blue;font-size:30px;font-family:Times New Roman;font-style:italic;text-align:center" >{{ msg }}</h3>
+        {% endif %}
+        <form class="form-signin" action="{{ url_for('signin') }}"  method="post">
+        <label for="inputName" class="sr-only">User Name</label>
+        <input type="text" name="Name" id="inputName" class="form-control" value = "{{ request.form.Name }}" placeholder="User Name" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="Password" id="inputPassword" class="form-control" value="{{ request.form.Password }}" placeholder="Password" required>
+        <input id="btnSignIn" class="btn btn-lg btn-primary btn-block" type="Submit" name="SignIn">
+          <p id="forgotpwd"><br>New User? <span><a href="{{ url_for('signup') }}">Create Account</a></span></p>
+          <p id="forgotpwd"><a href="#">Forgot Password</a></p>
+      </form>
+
+      </div>
+      <footer class="footer">
+        <p>&copy; Company 2017</p>
+      </footer>
+ 
+    </div>
+  </body>
+</html>

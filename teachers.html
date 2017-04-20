@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Little Tots</title>
+	<link href="{{ url_for('static', filename='index.css')}}" rel="stylesheet" type="text/css" />
+
+</head>
+<body id="page1">
+<div class="body1">
+  <div class="main">
+
+    <!-- header -->
+    <header>
+      <div class="wrapper">
+
+        <nav>
+
+          <ul id="menu">
+			<li><a id = "logo" href="#"></a><img width="25%"  src="\static\logo.png"><span id="logotitle">A Scoop of Wisdom!!</span></li>
+            <li><a href="{{ url_for('index') }}">HOME</a></li>
+            <li><a href="{{ url_for('programs') }}">PROGRAMS</a></li>
+            <li><a href="{{ url_for('teachers') }}">TEACHERS</a></li>
+            <li><a href="{{ url_for('newsletter') }}">NEWSLETTER</a></li>
+            <li><a href="{{ url_for('webportal') }}">WEB PORTAL</a></li>
+            <li class="end"><a href="{{ url_for('contact') }}">CONTACTS</a></li>
+			</ul>
+        </nav>
+		</div>
+   </header>
+
+<br><br>
+<div id = "b2" style="background-color:#FBF6D9;">
+       <h2 style="color:brown;font-family:castellar;">Littletots Preschool Teachers</h2>
+       <div id = "tea">
+
+            <img src = "\static\profile.jpg">
+            <article><span><b>Hello There!! I am Jasmin.</b></span>I graduated from the University  in December 2011 with a Bachelor of Teaching and Learning in ECE and prior to taking this position at BCP I have worked over the last 6 years in serveral preschool's relief teaching.<br><br>
+                As a recently graduated teacher I am looking forward to furthering my experineces and knowledge at Bishopdale Community Preschool.  I am passionate about using my musical skills to develop young children's language and believe that a strong partnership with parents/caregivers is very important to improving children's learning opportunities.</article>
+            <br>
+            <img src = "\static\profile.jpg">
+            <article><b>Hi Iam Jamie!!</b>I am a registered teacher in this centre. I originally came from Japan and graduated from the University of Canterbury in 2009 with a Bachelor of Teaching and Learning ECE and I have recently upgraded my qualification with a postgraduate diploma in Education. <br><br> I have a genuine passion for infant and toddler care and education. Inclusive education is at the core of my philosophy in teaching and learning. I value individual difference and provide equitable learning opportunities and care which meet the individual children’s and families’ needs.</article>
+            <br>
+             <img src = "\static\profile.jpg">
+            <article><b>Hi there,I am Nancy</b> I am from Wellington and have lived there for most of my life.  I studied at Victoria University and have a degree in Early Childhood Education and a graduate diploma in Primary teaching.
+
+I am very excited to join the Bishopdale Community Preschool team and be a part of this busy learning community.<br>  I am a dedicated early childhood teacher, passionate about contributing to the intellectual, social, emotional and physical development of young children.<br><br>  I have a love of learning so I am well versed in learning theories and practices, and look forward to provide  exceptional quality teaching and care in an energetic team environment.</article>
+            <br>
+
+        </div>
+</div>
+<!--
+
+<div id= "footer">
+<table>
+    <tr>
+        <td><h3>About Us:</h3></td>
+        <td><h3>Join In</h3></td>
+        <td><h3>Subscribe</h3></td>
+
+    </tr>
+    <tr>
+        <td>Country:INDIA</td>
+        <td><a href="{{ url_for('signin') }}">Sign In</a></td>
+        <td><input type="text"  width="60" name= "Subscribe" placeholder="Enter your Email address"></td>
+    </tr>
+    <tr>
+        <td>City:Chennai</td>
+        <td><a href="{{ url_for('webportal') }}">Web Portal</a></td>
+        <td><img style="width:10%;margin-top:5px;padding-right:20px;" src = "/static/facebook.png" alt = ""><img style="width:10%;margin-top:5px;padding-right:20px;" src = "/static/twitter.png" alt = ""><img style="width:10%;margin-top:5px;padding-right:20px;" src = "/static/rss.png" alt = ""></td>
+
+    </tr>
+    <tr>
+        <td>Ph:044-42876170</td>
+        <td><a href="{{ url_for('newsletter') }}">Newsletter</a></td>
+    </tr>
+    <tr>
+        <td>E-mail:ltots@yahoo.com</td>
+    </tr>
+</table>
+
+
+</div>
+<br><br>
+-->
+      </div>
+    </div>
+</body>
+</html>

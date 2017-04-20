@@ -1,0 +1,184 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding : 0px;
+	margin : 0px;
+}
+
+body{
+	background:transparent;
+	background-color:#fbf6d9;
+
+}
+#b1{
+background-color:#A2E752;
+}
+header{
+	height:150px;
+	width:100%;
+	overflow:hidden;
+
+}
+#page1{
+	text-align:center;
+	border: None;
+}
+
+.wrapper{
+	background-color:#08298A;
+	height: 150px;
+	width:100%;
+
+}
+
+#tea{
+float:center;
+margin-left:300px;
+width:80%;
+height:500;
+
+
+}
+#tea img{
+width:15%;
+height:50;
+align:center;
+margin-top:20px;
+margin-bottom:2px;
+margin-left:300px;
+float:left;
+height:200;
+
+}
+
+#tea article{
+display:inline-block;
+width:50%;
+overflow:hidden;
+margin-left:100px;
+float:left;
+padding-right:400px;
+margin-top:50px;
+margin-bottom:20px;
+}
+#menu{
+	list-style:none;
+	text-align:center;
+	font-family:Arial;
+	width:100%;
+}
+
+#menu > li  {
+	display:inline-block;
+	float:center;
+	padding-right:17px;
+	/*background:url(../Images/menu_line.jpg) right 0 no-repeat;*/
+	margin-right:15px;
+	padding-right:30px;
+
+
+}
+#menu > li > a{
+	color:yellow;
+	font-size:18px;
+	text-decoration:none;
+	height:15px;
+	padding:10px;
+}
+#logo  {
+	display:block;
+	background:url(../images/logo.png) no-repeat;
+	text-indent:0px;
+	height:90px;
+	padding-left:17px;
+	float:right;
+
+}
+#logotitle{
+	color:#FF0040;
+	font-family:French Script MT;
+	font-size:38px;
+}	
+#banner{
+	padding:0px;
+	margin:0px;
+	float:center;
+	width:100%;
+	background-image:url('http://www.crosswaysschools.co.uk/cjs/wp-content/uploads/sites/3/2014/03/junior_school_background4.jpg');
+	
+}
+#banner1{
+background-color:brown;
+width:100%;
+float:center;
+}
+#banner h1{
+	color:#8A0808;
+	font-style:Italic;
+	font-size:30px;
+	font-family:verdana;
+	padding-top:15px;
+}
+#banner h2{
+	color:#0B6138;
+	font-size:25px;
+	font-family:Arial Rounded MT;
+	text-align:left;
+	font-style:Bold;
+	padding-left:415px;
+}
+#info{
+	padding-left:420px;
+	padding-right:420px;
+	font-size:20px;
+	text-align:left;
+	font-family: Berlin Sans FB;
+	color: #4B088A;
+	}
+#info ul li{
+	margin-left: 50px;
+	padding-left:15px;
+}
+
+.footeritems{
+	width:100%;
+	overflow:hidden;
+	display:inline-block;
+	margin-left:20px;
+	float:center;
+	border:none;
+	color:red;
+	margin-top:15px;
+	margin-bottom:15px;
+	font-size:20px;
+	font-style:Bold;
+	
+}
+.footeritems li{
+	width:100%;
+	text-decoration:none;
+	list-style:none;
+	color:#4B088A;
+	padding-right:180px;
+	text-align:left;
+	overflow:scroll;
+}
+.footeritems li a{
+	text-decoration:none;
+	display:inline-block;
+	color:red;
+	vertical-align:top;
+	font-size:20px;
+	font-style:Bold;
+	font-family:Times New Roman;
+}
+#forgotpwd{
+text-decoration:none;
+}
+#footer{
+background-color:#08298A;
+width:100%;
+height:100%;
+float:center;
+padding-left:50px;
+}
